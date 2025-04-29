@@ -15,9 +15,7 @@ body {
 }
 
 
-
 /* ---ABOUT SECTION---- */
-
 
 .about-container {
     width: 85%;
@@ -47,9 +45,27 @@ body {
     line-height: 1.6;
 }
 
+#about .my-info .col-6 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    
+}
+
+
+#about .my-info .col-6 strong {
+    white-space: nowrap;
+    margin-bottom: 0;
+}
+
+
+#about .my-info .col-6 p {
+    margin: 0;
+}
+
 #about .socials a {
     font-size: 18px;
-    color:  #218838;
+    color: #1e8b79;
     
 }
 
@@ -80,7 +96,7 @@ body {
 
 
 .download-btn {
-    background-color: #1acd41;
+    background-color: #11bd74;
     color: white;
     padding: 10px 25px;
     font-size: 16px;
@@ -95,7 +111,7 @@ body {
 
 /* Hire Me Button */
 .hireme-btn {
-    background-color: #378753;
+    background-color: #0a796a;
     color: white;
     padding: 10px 25px;
     font-size: 16px;
@@ -108,14 +124,6 @@ body {
 .hireme-btn:hover {
     background-color: #266834; 
 }
-
-
-
-
-
-
-
-
 
 /* ----END OF ABOUT SECTION ---- */
 
@@ -156,6 +164,7 @@ body {
     height: 6px;
     border-radius: 3px;
     background-color: var(--gray-medium);
+
     
 }
 
@@ -183,3 +192,63 @@ section {
     object-fit: cover;
     max-height: 100%;
 }
+
+/* ---PAGES SECTION---- */
+.big-bold-number {
+    font-weight: bold;
+    font-size: 2.5rem;
+}
+
+.small-heading {
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+ .image-block img {
+    border-radius: 5px;
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+ }
+
+ .image-block img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+ }
+
+
+
+#brand {
+    background-color:#3d7e6c;
+    padding: 2rem;
+    margin-top: 0;
+}
+
+
+.logo-brand {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.logo-brand .item {
+    flex: 1 1 150px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.logo-brand img {
+    max-height: 100px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+
+.logo-brand img:hover {
+    transform: scale(1.1);
+}
+
+

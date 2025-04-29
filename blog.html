@@ -1,31 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Skills</title>
-
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UI Portfolio - Home</title>
     <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e3e5c;
+            background-image:linear-gradient(rgba(12, 10, 39, 0.9), rgba(12, 10, 39, 0.9)), url('images/banner2.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+        }
+        .navbar {
+            background-color:linear-gradient(rgba(12, 10, 39, 0.9), rgba(12, 10, 39, 0.9));
+            padding: 15px 0;
+            backdrop-filter: blur(5px);
+        }
+        .navbar-brand {
+            color: #fff !important;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+        .navbar-nav .nav-link {
+            color: #fff !important;
+            margin-right: 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .navbar-nav .nav-link.active {
+            color: #1abc9c !important;
+        }
+        #about {
+    background-color: #ffffff;
+}
 
-    <!-- Boxicons CSS -->
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-         
-    />
-    
-    <!-- ---font awesome for the icons-- -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-
+#skills {
+    background-color: #ffffff;
+}
+        .btn-hire {
+            background-color: #1abc9c;
+            color: #fff;
+            border-radius: 20px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+        .hero-section {
+            background: url('https://via.placeholder.com/1200x600') no-repeat center center;
+            background-size: cover;
+            color: #fff;
+            padding: 100px 0;
+            position: relative;
+        }
+        .hero-section h1 {
+            font-size: 3.5rem;
+            font-weight: bold;
+        }
+        .hero-section h1 span {
+            color: #1abc9c;
+        }
+        .hero-section p {
+            font-size: 1.2rem;
+            margin: 20px 0;
+        }
+        .btn-profile {
+            background-color: #fff;
+            color: #2c3e50;
+            border-radius: 20px;
+            padding: 10px 20px;
+            margin-left: 10px;
+            font-size: 1rem;
+            text-transform: uppercase;
+        }
+    </style>
+</head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="https://wp.w3layouts.com/ui-portfolio/">
+                <i class="fab fa-asymmetrik">
+                logo
+            </i>                
+                UI PORTFOLIO
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">BLOG</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">CONTACT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-hire" href="#">HIRE ME</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                  <h5 class="small-title">Welcome to my Portfolio</h5>
+                  <h1 class="title-main">Hi, I'm <span style="color: var(--teal-color);">John Doe</span></h1>
+                  <p class="bio">I am a passionate Web, Graphic Designer and Photographer. I love creating beautiful, user-friendly websites, stunning graphics, and capturing memorable moments through photography.</p>
+                    <a class="btn btn-hire" href="#">HIRE ME</a>
+                    <a class="btn btn-profile" href="portfolio.html">MY PORTFOLIO</a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="images\banner.png" alt="John Watson" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
         <!-- ----- start of about section ------- -->
   
 <div id="about" class="py-5">
@@ -244,5 +360,6 @@
             </div>
           </div>
         </section>
-  </body>
+  
+</body>
 </html>
